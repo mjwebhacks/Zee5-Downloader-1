@@ -4,9 +4,9 @@ class script(object):
     
 I'm A simple Zee5 link downloader bot With Permanent Thumbnail Support💯.
 
-Please send me any Zee5 link, I can upload it to telegram as File/Video.
+Please send me any Zee5 link, I can upload it to telegram as File & Video.
 
-Currently I'm in beta mode 🥺, If found any bugs, report @ML_SupportGroup !
+Currently I'm in beta mode 🥺, If found any bugs, please report to @ML_SupportGroup !
 
 Click <i>/help</i> for more details....</b>"""
 
@@ -17,19 +17,20 @@ Click <i>/help</i> for more details....</b>"""
 
 2. Send your zee5 url and select desired option.
 
+3. Enjoy..!!
 
 NOTE: Download may take some time! So please wait for it to complete!"""
 
 
-    ABOUT_TEXT = """⭕️<b>My Name : Zee5-DownloaderML</b>
+    ABOUT_TEXT = """🚀<b>My Name : Zee5-DownloaderML</b>
 
-⭕️<b>Creater :</b> @ML_BotUpdates
+🚀<b>Creater :</b> @Itz_Me_Malayaali & @ML_BotUpdates
 
-⭕️<b>Language :</b> <code>Python3</code>
+🚀<b>Language :</b> <code>Python3</code>
 
-⭕️<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
+🚀<b>Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram 1.0.7</a> 
 
-⭕️<b>Source Code :</b> 👉 <a href='https://github.com/kristy-offl/Zee5-Downloader'>Click Here</a>"""
+🚀<b>Source Code :</b> 👉 <a href='https://github.com/kristy-offl/Zee5-Downloader'>Click Here</a>"""
 
 
 
@@ -49,7 +50,7 @@ NOTE: Download may take some time! So please wait for it to complete!"""
     
     RCHD_TG_API_LIMIT = "Downloaded in {} seconds.\nDetected File Size: {}\nSorry. But, I cannot upload files greater than 1.95GB due to Telegram API limitations."
 
-    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "**Thank you for Using Meh!! ❤️**"
+    AFTER_SUCCESSFUL_UPLOAD_MSG_WITH_TS = "**Thank you for Using Meh! Share Our Service ! ❤️**"
     
     SAVED_CUSTOM_THUMB_NAIL = "<b>✅Custom thumbnail Saved.\nThis thumbnail will be Permanent for all future uploads\n\nDo /delthumb to clear your thumbnail!</b>"
     
