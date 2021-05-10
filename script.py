@@ -54,7 +54,7 @@ NOTE: Download may take some time! So please wait for it to complete!</b>"""
     
     DEL_ETED_CUSTOM_THUMB_NAIL = "</b>✅ Custom Thumbnail cleared succesfully.</b>"
     
-    SHOW_THUMB = "<b>@ML_BotUpdates\n\nUse /delthumb to clear this thumbnail.</b>"
+    SHOW_THUMB = "<b>@movies_unloaded\n\nUse /delthumb to clear this thumbnail.</b>"
     
     NO_THUMB = "<b>SED😕 No saved thumbnails Found!!</b>"
     
