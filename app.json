@@ -7,7 +7,7 @@
     "downloader"
   ],
 
-  "repository": "https://github.com/TroJanzHEX/Zee5-Downloader",
+  "repository": "https://github.com/ak3052005/Zee5-Downloader",
   
   "env": {
     "WEBHOOK": {
@@ -28,7 +28,7 @@
     },
     "AUTH_USERS": {
       "description": "allow only pre-defined users to use this bot",
-      "value": "680815375"
+      "value": "1251111009"
     },
     "BANNED_USERS": {
       "description": "Banned Unwanted members..",
