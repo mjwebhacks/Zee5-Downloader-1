@@ -12,7 +12,7 @@ If you find any bugs, report at
 
 #### Deploy to Heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/Kristy-offl/Zee5-Downloader)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://www.heroku.com/deploy?template=https://github.com/ak3052005/Zee5-Downloader-1)
 
 #### Run in your VPS
 
