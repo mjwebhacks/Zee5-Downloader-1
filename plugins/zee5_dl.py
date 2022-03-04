@@ -40,7 +40,29 @@ from plugins.helpers import(
 )
 
 
-
+def token():
+	if os.path.isfile(tokenfile):
+		with open(tokenfile,'r') as f:
+				return json.load(f)
+	else:
+		r = session.post(url='https://whapi.zee5.com/v1/user/loginemail_v2.php',
+		  data=(json.dumps({'email':config['email'], 
+		 'password':config['pass'], 
+		 'aid':'91955485578', 
+		 'lotame_cookie_id':'', 
+		 'guest_token':'RUJT0alkBYwU2gTRd4KB000000000000', 
+		 'platform':'web', 
+		 'version':'2.50.71'})),
+		  headers={'User-Agent':ua(),  'Content-Type':'application/json', 
+		 'Origin':'https://www.zee5.com',  'Referer':'https://www.zee5.com/'})
+		if not r.ok:
+		    print(f"Error Login\n{r.text}")
+		    exit()
+		token = r.json()
+		with open(tokenfile,'w') as f:
+			f.write(json.dumps({'asccess_token':token}, indent=2))
+		return token['access_token']
+  
 @Client.on_message(filters.private & filters.regex(pattern=".*http.*"))
 async def zee5_capture(bot, update):
 
@@ -57,12 +79,12 @@ async def zee5_capture(bot, update):
     if "zee5" in update.text:
         try:
             w = update.text 
-            req1 = requests.get("https://useraction.zee5.com/tokennd").json()
+            req1 = requests.get("https://useraction.zee5.com/token/platform_tokens.php?platform_name=androidtv_app").json()['token']
             rgx = re.findall("([0-9]?\w+)", w)[-3:]
             li = { "url":"zee5vodnd.akamaized.net", "token":"https://gwapi.zee5.com/content/details/" }
             req2 = requests.get("https://useraction.zee5.com/token/platform_tokens.php?platform_name=web_app").json()["token"]
             headers["X-Access-Token"] = req2
-            req3 = requests.get("https://useraction.zee5.com/token").json()    
+            req3 = requests.get("https://useraction.zee5.com/token").json()['token'] 
             if "movies" in w:
                     r1 = requests.get(li["token"] + "-".join(rgx),
                                                 headers=headers, 
